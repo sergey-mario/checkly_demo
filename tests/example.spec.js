@@ -2,6 +2,7 @@
 const { test, expect } = require('@playwright/test')
 
 test('locked user', async ({ page }) => {
+  // Hello world
   await page.goto('https://www.saucedemo.com/');
   await page.type('#user-name', 'locked_out_user')
   await page.type('#password', 'secret_sauce')
